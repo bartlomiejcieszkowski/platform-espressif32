@@ -564,6 +564,7 @@ env.Prepend(
         join(FRAMEWORK_DIR, "components", "efuse", "esp32", "include"),
         join(FRAMEWORK_DIR, "components", "esp-tls"),
         join(FRAMEWORK_DIR, "components", "esp_adc_cal", "include"),
+        join(FRAMEWORK_DIR, "components", "esp_common", "include"),
         join(FRAMEWORK_DIR, "components", "esp_event", "include"),
         join(FRAMEWORK_DIR, "components", "esp_http_client", "include"),
         join(FRAMEWORK_DIR, "components", "esp_http_server", "include"),
