@@ -90,7 +90,10 @@ ulp_env.Append(
                 "-MT", "${TARGET}.o",
                 "-DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\"",
                 '-I "%s"' % join(
-                    FRAMEWORK_DIR, "components", "soc", "esp32", "include"),
+                    FRAMEWORK_DIR, "components", "soc", "esp32", "include"), 
+                # so the v4.0 has include <esp_bits_def.h>
+                '-I "%s"' % join(
+                    FRAMEWORK_DIR, "components", "esp_common", "include"), 
                 "-E", "-P", "-xc",
                 "-o", "$TARGET", "-D__ASSEMBLER__", "$SOURCE"
             ]), "Preprocessing $TARGET"),
