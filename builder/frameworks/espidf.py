@@ -367,7 +367,8 @@ def build_espidf_bootloader():
     envsafe.Append(
         CPPPATH=[
             join(FRAMEWORK_DIR, "components", "esp32"),
-            join(FRAMEWORK_DIR, "components", "bootloader_support", "include_priv")
+            join(FRAMEWORK_DIR, "components", "bootloader_support", "include_priv"),
+            join(FRAMEWORK_DIR, "components", "esp_rom", "include")
         ]
     )
 
