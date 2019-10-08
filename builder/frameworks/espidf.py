@@ -369,7 +369,8 @@ def build_espidf_bootloader():
             join(FRAMEWORK_DIR, "components", "esp32"),
             join(FRAMEWORK_DIR, "components", "bootloader_support", "include_priv"),
             join(FRAMEWORK_DIR, "components", "esp_rom", "include"),
-            join(FRAMEWORK_DIR, "components", "xtensa", "include")
+            join(FRAMEWORK_DIR, "components", "xtensa", "include"),
+            join(FRAMEWORK_DIR, "components", "xtensa", "esp32", "include")
         ]
     )
 
