@@ -574,6 +574,7 @@ env.Prepend(
         join(FRAMEWORK_DIR, "components", "esp_https_server", "include"),
         join(FRAMEWORK_DIR, "components", "esp_https_ota", "include"),
         join(FRAMEWORK_DIR, "components", "esp_ringbuf", "include"),
+        join(FRAMEWORK_DIR, "components", "esp_rom", "include"),
         join(FRAMEWORK_DIR, "components", "esp32", "include"),
         join(FRAMEWORK_DIR, "components", "espcoredump", "include"),
         join(FRAMEWORK_DIR, "components", "ethernet", "include"),
@@ -628,6 +629,8 @@ env.Prepend(
         join(FRAMEWORK_DIR, "components", "wifi_provisioning", "include"),
         join(FRAMEWORK_DIR, "components", "wpa_supplicant", "include"),
         join(FRAMEWORK_DIR, "components", "wpa_supplicant", "port", "include"),
+        join(FRAMEWORK_DIR, "components", "xtensa", "esp32", "include"),
+        join(FRAMEWORK_DIR, "components", "xtensa", "include"),
         join(FRAMEWORK_DIR, "components", "xtensa-debug-module", "include")
     ],
 
